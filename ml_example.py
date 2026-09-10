@@ -36,7 +36,7 @@ f1 = f1_score(y_test, y_pred, average='macro')
 
 #Print the F1 score
 print ('F1 score: ', f1)
-
+print ('This is print branch')
 # Calculate confusion matrix
 cm = confusion_matrix(y_test, y_pred)
 
