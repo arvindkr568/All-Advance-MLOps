@@ -2,6 +2,9 @@ name: "ML Run in Sequence"
 # on mentions a trigger for the workflow
 on: 
     push: # when a push is made to the main branch of the repository
+      branches:
+        - 'feature/*'      # Matches branches like feature/login, feature/ui
+        - 'action-code'
     #workflow_dispatch:  # run only when triggered manually
 jobs:
   ml_run:
